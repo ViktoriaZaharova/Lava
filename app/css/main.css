@@ -2,8 +2,8 @@
   font-family: "TTCommons";
   font-weight: 900;
   font-style: normal;
-  src: url("../fonts/TTCommons/TTCommons-Black.eot");
-  src: url("../fonts/TTCommons/TTCommons-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/TTCommons/TTCommons-Black.woff") format("woff"), url("../fonts/TTCommons/TTCommons-Black.ttf") format("truetype"); }
+  src: url("../fonts/TTCommons/TTCommonsProExp-Blk.eot");
+  src: url("../fonts/TTCommons/TTCommonsProExp-Blk.eot?#iefix") format("embedded-opentype"), url("../fonts/TTCommons/TTCommonsProExp-Blk.woff") format("woff"), url("../fonts/TTCommons/TTCommonsProExp-Blk.ttf") format("truetype"); }
 
 * {
   -webkit-box-sizing: border-box;
