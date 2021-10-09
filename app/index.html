@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Лава</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+
+
+<div class="wrapper">
+  <div class="content">
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 d-flex align-items-center flex-wrap">
+            <a href="img/logo.svg" class="logo"><img src="img/logo.svg" alt=""></a>
+            <ul class="menu">
+              <li><a href="#">Главная</a></li>
+              <li><a href="#" class="active">Переводы</a></li>
+              <li><a href="#">История</a></li>
+              <li class="dropdown"><a href="#" class="dropdown-toggle dropdown-toggle-my menu-links" role="button"
+                                      id="dropdownMenu" data-toggle="dropdown"
+                                      aria-haspopup="true" aria-expanded="false">Ещё <span
+                  class="menu-links__icon"><img src="img/dots-horizontal.svg" alt=""></span></a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenu">
+                  <a class="dropdown-item" href="#">
+                    Оплата услуг
+                  </a>
+                  <a class="dropdown-item" href="#">
+                    Кешбек и акции
+                  </a>
+                  <a class="dropdown-item" href="#">
+                    Инвестиции
+                  </a>
+                </div>
+              </li>
+            </ul>
+
+            <a href="#" class="notification-links"><img src="img/notification.svg" alt=""></a>
+
+            <div class="dropdown dropdown-cabinet">
+              <a href="#" class="dropdown-toggle avatar-user dropdown-toggle-my" role="button" id="dropdownMenuLink"
+                 data-toggle="dropdown"
+                 aria-haspopup="true" aria-expanded="false"><img
+                  src="img/avatar.png" alt=""></a>
+
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="#">
+                  <span class="dropdown-item__icon"><img src="img/settings.svg" alt=""></span>
+                  <span class="dropdown-item__text">Настройки</span>
+                </a>
+                <a class="dropdown-item" href="#">
+                  <span class="dropdown-item__icon"><img src="img/exit.svg" alt=""></span>
+                  <span class="dropdown-item__text">Выйти</span>
+                </a>
+              </div>
+            </div>
+            <div class="btn-burger"></div>
+          </div>
+        </div>
+      </div>
+      <div class="mobile-menu">
+        <div class="mobile-menu-item">
+          <ul class="menu">
+            <li><a href="#">Главная</a></li>
+            <li><a href="#" class="active">Переводы</a></li>
+            <li><a href="#">История</a></li>
+            <li class="dropdown"><a href="#" class="dropdown-toggle dropdown-toggle-my menu-links" role="button"
+                                    id="dropdownMenu2" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">Ещё <span
+                class="menu-links__icon"><img src="img/arrow-top.svg" alt=""></span></a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <a class="dropdown-item" href="#">
+                  Оплата услуг
+                </a>
+                <a class="dropdown-item" href="#">
+                  Кешбек и акции
+                </a>
+                <a class="dropdown-item" href="#">
+                  Инвестиции
+                </a>
+              </div>
+            </li>
+            <li><a href="#">Курсы валют</a></li>
+            <li><a href="#">Лимиты</a></li>
+          </ul>
+        </div>
+
+        <div class="mobile-menu-item">
+          <div class="account-profile">
+            <div class="avatar-user"><img
+                src="img/avatar.png" alt=""></div>
+            <h4>Даниил Фетисов</h4>
+          </div>
+
+          <div class="cabinet-menu">
+            <a class="dropdown-item" href="#">
+              <span class="dropdown-item__text">Настройки</span>
+            </a>
+            <a class="dropdown-item" href="#">
+              <span class="dropdown-item__icon"><img src="img/exit.svg" alt=""></span>
+              <span class="dropdown-item__text">Выйти</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="sidebar-footer">
+          <a href="#" class="color-grey">Правовые документы</a>
+          <a href="#" class="color-grey">О компании</a>
+          <div class="copyright">© 2021 LAVA</div>
+        </div>
+      </div>
+    </header>
+
+    <div class="main">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-3 d-none d-lg-block">
+            <div class="sidebar">
+              <div class="sidebar-box">
+                <div class="total-balance">
+                  <p>Общий баланс</p>
+                  <div class="total-balance__val"><strong>98 225,</strong>69 ₽</div>
+                </div>
+
+                <div class="balance-of-currency">
+                  <div class="balance-of-currency__box">
+                    <p>Рубли</p>
+                    <div class="number-check">R616919 <a href="#" class="links-copy"><img src="img/copy.svg" alt=""></a>
+                    </div>
+                  </div>
+                  <div class="balance-of-currency__box box-right">
+                    <p>36 235,16 ₽</p>
+                    <span>Основной счёт</span>
+                  </div>
+
+                  <div class="dropdown dropdown-check">
+                    <a href="#" class="btn-settings dropdown-toggle dropdown-toggle-my" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false"><img src="img/dots-vertical.svg" alt=""></a>
+                    <div class="dropdown-menu">
+                      <a href="#" class="dropdown-item">Сделать основной</a>
+                      <a href="#" class="dropdown-item">Скопировать номер</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="balance-of-currency">
+                  <div class="balance-of-currency__box">
+                    <p>Евро</p>
+                    <div class="number-check">E616919 <a href="#" class="links-copy"><img src="img/copy.svg" alt=""></a>
+                    </div>
+                  </div>
+                  <div class="balance-of-currency__box box-right">
+                    <p>616,99 €</p>
+                    <span>52 570,78 в RUB</span>
+                  </div>
+
+                  <div class="dropdown dropdown-check">
+                    <a href="#" class="btn-settings dropdown-toggle dropdown-toggle-my" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false"><img src="img/dots-vertical.svg" alt=""></a>
+                    <div class="dropdown-menu">
+                      <a href="#" class="dropdown-item">Сделать основной</a>
+                      <a href="#" class="dropdown-item">Скопировать номер</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="balance-of-currency">
+                  <div class="balance-of-currency__box">
+                    <p>Доллары</p>
+                    <div class="number-check">D616919 <a href="#" class="links-copy"><img src="img/copy.svg" alt=""></a>
+                    </div>
+                  </div>
+                  <div class="balance-of-currency__box box-right">
+                    <p>129,57 $</p>
+                    <span>9 419,75 в RUB</span>
+                  </div>
+
+                  <div class="dropdown dropdown-check">
+                    <a href="#" class="btn-settings dropdown-toggle dropdown-toggle-my" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false"><img src="img/dots-vertical.svg" alt=""></a>
+                    <div class="dropdown-menu">
+                      <a href="#" class="dropdown-item">Сделать основной</a>
+                      <a href="#" class="dropdown-item">Скопировать номер</a>
+                    </div>
+                  </div>
+                </div>
+
+                <a href="#" class="exchange-links">
+                  <span class="exchange-links__icon"><img src="img/exchange.svg" alt=""></span>
+                  <span class="exchange-links__text">Обменять валюту</span>
+                </a>
+              </div>
+
+              <div class="sidebar-box">
+                <div class="identification">
+                  <div class="identification-top">
+                    <h4>Идентификация</h4>
+                    <div class="identification-time">Скоро</div>
+                  </div>
+                  <div class="identification-status">Недоступно</div>
+                </div>
+              </div>
+              <div class="sidebar-box">
+                <ul class="menu">
+                  <li><a href="#">Курсы валют</a></li>
+                  <li><a href="#">Лимиты</a></li>
+                </ul>
+              </div>
+
+              <div class="sidebar-footer">
+                <a href="#" class="color-grey">Правовые документы</a>
+                <a href="#" class="color-grey">О компании</a>
+                <div class="copyright">© 2021 LAVA</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-9">
+            <div class="main-content w-100">
+              <div class="home-slider main-item w-100">
+                <div class="slide">
+                  <div class="home-slider__item"><img src="img/slide1.jpg" alt=""></div>
+                </div>
+                <div class="slide">
+                  <div class="home-slider__item"><img src="img/slide2.jpg" alt=""></div>
+                </div>
+                <div class="slide">
+                  <div class="home-slider__item"><img src="img/slide3.jpg" alt=""></div>
+                </div>
+                <div class="slide">
+                  <div class="home-slider__item"><img src="img/slide4.jpg" alt=""></div>
+                </div>
+                <div class="slide">
+                  <div class="home-slider__item"><img src="img/slide5.jpg" alt=""></div>
+                </div>
+                <div class="slide">
+                  <div class="home-slider__item"><img src="img/slide6.jpg" alt=""></div>
+                </div>
+                <div class="slide home-slider__item-view">
+                  <div class="home-slider__item"><img src="img/slide7.jpg" alt=""></div>
+                </div>
+                <div class="slide">
+                  <div class="home-slider__item"><img src="img/slide8.jpg" alt=""></div>
+                </div>
+                <div class="slide">
+                  <div class="home-slider__item"><img src="img/slide1.jpg" alt=""></div>
+                </div>
+                <div class="slide">
+                  <div class="home-slider__item"><img src="img/slide2.jpg" alt=""></div>
+                </div>
+                <div class="slide">
+                  <div class="home-slider__item"><img src="img/slide3.jpg" alt=""></div>
+                </div>
+              </div>
+
+              <div class="main-item w-100 d-block d-lg-none">
+                <div class="total-balance">
+                  <p>Общий баланс</p>
+                  <div class="total-balance__val">98 225,69 <span class="currency-icon">₽</span></div>
+                </div>
+
+                <div class="balance-currency-slider w-100">
+                  <div class="slide">
+                    <div class="balance-of-currency">
+                      <div class="balance-of-currency__box">
+                        <p>Рубли</p>
+                        <div class="number-check">R616919 <a href="#" class="links-copy"><img src="img/copy-orange.svg" alt=""></a>
+                        </div>
+                      </div>
+                      <div class="balance-of-currency__box box-right">
+                        <p>36 235,16 ₽</p>
+                        <span>Основной счёт</span>
+                      </div>
+
+                      <div class="dropdown dropdown-check">
+                        <a href="#" class="btn-settings dropdown-toggle dropdown-toggle-my" data-toggle="dropdown"
+                           aria-haspopup="true" aria-expanded="false"><img src="img/dots-vertical.svg" alt=""></a>
+                        <div class="dropdown-menu">
+                          <a href="#" class="dropdown-item">Сделать основной</a>
+                          <a href="#" class="dropdown-item">Скопировать номер</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="slide">
+                    <div class="balance-of-currency">
+                      <div class="balance-of-currency__box">
+                        <p>Евро</p>
+                        <div class="number-check">E616919 <a href="#" class="links-copy"><img src="img/copy-orange.svg" alt=""></a>
+                        </div>
+                      </div>
+                      <div class="balance-of-currency__box box-right">
+                        <p>616,99 €</p>
+                        <span>52 570,78 в RUB</span>
+                      </div>
+
+                      <div class="dropdown dropdown-check">
+                        <a href="#" class="btn-settings dropdown-toggle dropdown-toggle-my" data-toggle="dropdown"
+                           aria-haspopup="true" aria-expanded="false"><img src="img/dots-vertical.svg" alt=""></a>
+                        <div class="dropdown-menu">
+                          <a href="#" class="dropdown-item">Сделать основной</a>
+                          <a href="#" class="dropdown-item">Скопировать номер</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="slide">
+                    <div class="balance-of-currency">
+                      <div class="balance-of-currency__box">
+                        <p>Доллары</p>
+                        <div class="number-check">D616919 <a href="#" class="links-copy"><img src="img/copy-orange.svg" alt=""></a>
+                        </div>
+                      </div>
+                      <div class="balance-of-currency__box box-right">
+                        <p>129,57 $</p>
+                        <span>9 419,75 в RUB</span>
+                      </div>
+
+                      <div class="dropdown dropdown-check">
+                        <a href="#" class="btn-settings dropdown-toggle dropdown-toggle-my" data-toggle="dropdown"
+                           aria-haspopup="true" aria-expanded="false"><img src="img/dots-vertical.svg" alt=""></a>
+                        <div class="dropdown-menu">
+                          <a href="#" class="dropdown-item">Сделать основной</a>
+                          <a href="#" class="dropdown-item">Скопировать номер</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="main-item translation-item w-100">
+                <h2>Переводы</h2>
+
+                <div class="translation-item-wrapper w-100">
+                  <div class="translation-slider__box-col">
+                    <div class="translation-slider__box-row">
+                      <div class="translation-slider__box-icon"><img src="img/logo-icon.svg" alt=""></div>
+                      <p>На Лава Кошелек</p>
+                    </div>
+                    <div class="translation-slider__box-row">
+                      <div class="translation-slider__box-icon"><img src="img/pay-icon.svg" alt=""></div>
+                      <p>На банковскую карту</p>
+                    </div>
+                  </div>
+
+                  <div class="translation-slider">
+                    <div class="slide">
+                      <div class="translation-slider__box">
+                        <div class="translation-slider__box-wrap">
+                          <div class="translation-slider__box-wrap-icon"><img src="img/dots-grey.svg" alt=""></div>
+                          <p>Транспорт</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="slide">
+                      <div class="translation-slider__box">
+                        <div class="translation-slider__box-wrap">
+                          <div class="translation-slider__box-wrap-icon"><img src="img/dots-grey.svg" alt=""></div>
+                          <p>Мобильная
+                            связь</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="slide">
+                      <div class="translation-slider__box">
+                        <div class="translation-slider__box-wrap">
+                          <div class="translation-slider__box-wrap-icon"><img src="img/dots-grey.svg" alt=""></div>
+                          <p>Госуслуги</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="slide">
+                      <div class="translation-slider__box">
+                        <div class="translation-slider__box-wrap">
+                          <div class="translation-slider__box-wrap-icon"><img src="img/dots-grey.svg" alt=""></div>
+                          <p>Транспорт</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="slide">
+                      <div class="translation-slider__box">
+                        <div class="translation-slider__box-wrap">
+                          <div class="translation-slider__box-wrap-icon"><img src="img/dots-grey.svg" alt=""></div>
+                          <p>Мобильная
+                            связь</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+              </div>
+
+              <div class="main-item history-item">
+                <h2>История</h2>
+
+                <div class="history-item-wrapper">
+                  <div class="history-item-row">
+                    <div class="history-item__month">Сентябрь</div>
+                    <div class="history-item__val">
+                      <p>+15 000 ₽</p>
+                      <p>−14 902,85 ₽</p>
+                    </div>
+                  </div>
+
+                  <div class="history-item-date">Сегодня</div>
+                  <div class="history-item-row">
+                    <div class="history-item-row__icon"><img src="img/yandex-money.svg" alt=""></div>
+                    <div class="history-item-row__name">
+                      <h3>Перевод на ЮMoney</h3>
+                      <div class="subtitle">Subtitle</div>
+                    </div>
+
+                    <div class="history-item-row__val">
+                      <div class="sum-transfer">
+                        −894 ₽
+                        <div class="time-icon"><img src="img/clock.svg" alt=""></div>
+                      </div>
+                      <div class="commission">Комиссия 0,30 ₽</div>
+                    </div>
+                  </div>
+
+                  <div class="history-item-row">
+                    <div class="history-item-row__icon pay-icon"><img src="img/pay-icon.svg" alt=""></div>
+                    <div class="history-item-row__name">
+                      <h3>Перевод на карту</h3>
+                    </div>
+
+                    <div class="history-item-row__val">
+                      <div class="sum-transfer">
+                        −13 999,77 ₽
+                      </div>
+                      <div class="commission">Комиссия 100,00 ₽</div>
+                    </div>
+                  </div>
+
+                  <div class="history-item-date">20 сентября</div>
+
+                  <div class="history-item-row">
+                    <div class="history-item-row__icon"><img src="img/qiwi.svg" alt=""></div>
+                    <div class="history-item-row__name">
+                      <h3>Перевод на кошелёк QIWI +7 977 ••• •• 95</h3>
+                    </div>
+
+                    <div class="history-item-row__val">
+                      <div class="sum-transfer">
+                        −500 ₽
+                      </div>
+                    </div>
+                    <div class="history-item-row__footer">
+                      <div class="offer-history">Купи Биг Тейсти и колу 0,5</div>
+                    </div>
+                  </div>
+
+                  <div class="history-item-row">
+                    <div class="history-item-row__icon"><img src="img/logo-icon.svg" alt=""></div>
+                    <div class="history-item-row__name">
+                      <h3>Пополнение с Лава Кошелька R435712</h3>
+                    </div>
+
+                    <div class="history-item-row__val">
+                      <div class="sum-transfer sum-transfer-refill">
+                        +15 000 ₽
+                      </div>
+                      <div class="commission">Комиссия 0,30 ₽</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="history-item-wrapper">
+                  <div class="history-item-row">
+                    <div class="history-item__month">Август</div>
+                    <div class="history-item__val">
+                      <p>+15 000 ₽</p>
+                      <p>−14 902,85 ₽</p>
+                    </div>
+                  </div>
+
+                  <div class="history-item-date">27 августа</div>
+                  <div class="history-item-row">
+                    <div class="history-item-row__icon"><img src="img/yandex-money.svg" alt=""></div>
+                    <div class="history-item-row__name">
+                      <h3>Dribbble</h3>
+                      <div class="subtitle">Subtitle</div>
+                    </div>
+
+                    <div class="history-item-row__val">
+                      <div class="sum-transfer">
+                        −894 ₽
+                      </div>
+                      <div class="commission">Комиссия 0,30 ₽</div>
+                    </div>
+                  </div>
+
+                  <div class="history-item-row">
+                    <div class="history-item-row__icon pay-icon"><img src="img/pay-icon.svg" alt=""></div>
+                    <div class="history-item-row__name">
+                      <h3>Перевод на карту</h3>
+                      <div class="subtitle">Subtitle</div>
+                    </div>
+
+                    <div class="history-item-row__val">
+                      <div class="sum-transfer">
+                        −13 999,77 ₽
+                      </div>
+                      <div class="commission">Комиссия 100,00 ₽</div>
+                    </div>
+                  </div>
+
+                  <div class="history-item-row">
+                    <div class="history-item-row__icon pay-icon"><img src="img/pay-icon.svg" alt=""></div>
+                    <div class="history-item-row__name">
+                      <h3>Федеральная Налоговая Служба</h3>
+                      <div class="subtitle">Госуслуги</div>
+                    </div>
+
+                    <div class="history-item-row__val">
+                      <div class="sum-transfer">
+                        −500 ₽
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="history-item-row">
+                    <div class="history-item-row__icon"><img src="img/logo-icon.svg" alt=""></div>
+                    <div class="history-item-row__name">
+                      <h3>Пополнение с Лава Кошелька R435712</h3>
+                    </div>
+
+                    <div class="history-item-row__val">
+                      <div class="sum-transfer sum-transfer-refill">
+                        +15 000 ₽
+                      </div>
+                      <div class="commission">Комиссия 0,30 ₽</div>
+                    </div>
+                  </div>
+
+                  <div class="history-item-row">
+                    <div class="history-item-row__icon"><img src="img/logo-icon.svg" alt=""></div>
+                    <div class="history-item-row__name">
+                      <h3>Пополнение с Лава Кошелька R435712</h3>
+                    </div>
+
+                    <div class="history-item-row__val">
+                      <div class="sum-transfer sum-transfer-refill">
+                        +15 000 ₽
+                      </div>
+                      <div class="commission">Комиссия 0,30 ₽</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script src="js/common.js"></script>
+
+</body>
+</html>
