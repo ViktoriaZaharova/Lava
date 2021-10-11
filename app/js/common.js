@@ -1,5 +1,5 @@
 $('.home-slider').slick({
-    slidesToShow: 7,
+    slidesToShow: 8,
     variableWidth: true,
     infinite: false,
     prevArrow: '<button type="button" class="slick-prev"></button>',
@@ -18,7 +18,7 @@ $('.home-slider').slick({
 });
 
 $('.translation-slider').slick({
-    slidesToShow: 2,
+    slidesToShow: 3,
     variableWidth: true,
     infinite: false,
     prevArrow: '<button type="button" class="slick-prev"></button>',
@@ -50,12 +50,14 @@ $('.btn-burger').on('click', function () {
    $('.mobile-menu').fadeToggle();
 });
 
+
+
 $('.mobile-menu .dropdown-toggle').on('click', function (e) {
     e.preventDefault();
     $(this).toggleClass('show').siblings('.dropdown-menu').slideToggle();
 });
 
 $('.dropdown-check').hover(function () {
-    $('.dropdown-check').removeClass('hover');
-   $(this).addClass('hover');
+    $('.dropdown-check').removeClass('show');
+   $(this).addClass('show');
 });

@@ -389,10 +389,11 @@ header
     .dropdown-check
       display: block
 
-.dropdown-check.hover>.dropdown-menu
+.dropdown-check.show>.dropdown-menu
   display: block
   transform: none !important
   margin: 12px 0 0
+
 
 .number-check
   display: flex
@@ -408,8 +409,10 @@ header
   display: none
 
   .dropdown-menu
-    margin: 0
+    transform: none !important
     right: 0 !important
+    margin: 40px 0 0
+    top: 100% !important
 
 .btn-settings
   width: 28px
@@ -581,7 +584,10 @@ header
   letter-spacing: -0.24px
   font-size: 18px
   font-weight: 600
-
+  color: #252129
+  &:hover
+    color: #252129
+    box-shadow: 0px 16px 32px rgba(37, 33, 41, 0.08), 0px 0px 12px rgba(37, 33, 41, 0.04)
   &:last-child
     margin-top: 0
 
