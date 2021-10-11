@@ -1,5 +1,5 @@
 $('.home-slider').slick({
-    slidesToShow: 6,
+    slidesToShow: 7,
     variableWidth: true,
     infinite: false,
     prevArrow: '<button type="button" class="slick-prev"></button>',
@@ -18,7 +18,7 @@ $('.home-slider').slick({
 });
 
 $('.translation-slider').slick({
-    slidesToShow: 4,
+    slidesToShow: 2,
     variableWidth: true,
     infinite: false,
     prevArrow: '<button type="button" class="slick-prev"></button>',
@@ -39,7 +39,6 @@ $('.translation-slider').slick({
 $('.balance-currency-slider').slick({
     slidesToShow: 1,
     variableWidth: true,
-    // infinite: false,
     arrows: false,
     dots: true,
     autoplay: true,
@@ -49,4 +48,14 @@ $('.balance-currency-slider').slick({
 $('.btn-burger').on('click', function () {
    $(this).toggleClass('click');
    $('.mobile-menu').fadeToggle();
+});
+
+$('.mobile-menu .dropdown-toggle').on('click', function (e) {
+    e.preventDefault();
+    $(this).toggleClass('show').siblings('.dropdown-menu').slideToggle();
+});
+
+$('.dropdown-check').hover(function () {
+    $('.dropdown-check').removeClass('hover');
+   $(this).addClass('hover');
 });
