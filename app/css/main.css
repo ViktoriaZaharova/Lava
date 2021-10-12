@@ -515,11 +515,15 @@ header {
 
 .home-slider {
   margin: 0 8px; }
+  .home-slider .slick-slide {
+    margin: 0 16px 0 0; }
+    .home-slider .slick-slide:first-child {
+      margin: 0 16px;
+      padding: 0 0 0 16px; }
   .home-slider .slick-arrow {
     top: calc(50% - 16px); }
 
 .home-slider__item {
-  margin: 0 16px 0 0;
   width: 96px;
   height: 140px;
   overflow: hidden;
@@ -601,6 +605,10 @@ header {
 
 .translation-slider {
   width: calc(100% - 312px); }
+  .translation-slider .slick-slide {
+    padding: 20px 16px 32px 0; }
+    .translation-slider .slick-slide:first-child {
+      padding: 20px 16px 32px; }
 
 .translation-slider__box-wrap {
   width: 180px;
@@ -613,7 +621,6 @@ header {
   letter-spacing: -0.24px;
   font-size: 18px;
   font-weight: 600;
-  margin: 20px 0 32px 16px;
   -webkit-transition: .3s ease;
   transition: .3s ease;
   cursor: pointer; }

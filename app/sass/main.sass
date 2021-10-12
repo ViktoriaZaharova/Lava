@@ -449,13 +449,16 @@ header
 
 .home-slider
   margin: 0 8px
-
+  .slick-slide
+    margin: 0 16px 0 0
+    &:first-child
+      margin: 0 16px
+      padding: 0 0 0 16px
   .slick-arrow
     top: calc(50% - 16px)
 
 
 .home-slider__item
-  margin: 0 16px 0 0
   width: 96px
   height: 140px
   overflow: hidden
@@ -523,6 +526,10 @@ header
 
 .translation-slider
   width: calc(100% - 312px)
+  .slick-slide
+    padding: 20px 16px 32px 0
+    &:first-child
+      padding: 20px 16px 32px
 
 
 .translation-slider__box-wrap
@@ -535,7 +542,7 @@ header
   letter-spacing: -0.24px
   font-size: 18px
   font-weight: 600
-  margin: 20px 0 32px 16px
+  //margin: 20px 0 32px 16px
   transition: .3s ease
   cursor: pointer
   p
