@@ -61,3 +61,11 @@ $('.dropdown-check').hover(function () {
     $('.dropdown-check').removeClass('show');
    $(this).addClass('show');
 });
+
+$(document).mouseover(function (e) { // событие  увода мыши
+    var div = $(".balance-of-currency"); // тут указываем ID элемента
+    if (!div.is(e.target) // если увели мышку
+        && div.has(e.target).length === 0) { // и не по его дочерним элементам
+        div.find('.dropdown-check').removeClass('show');
+    }
+});
